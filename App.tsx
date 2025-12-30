@@ -1,18 +1,13 @@
-import { Text, View } from 'react-native';
-import React, { Component } from 'react';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import RootNavigator from './src/navigator/RootNavigator';
 
-export class App extends Component {
-  render() {
-    return (
-      <View>
-        <Text>App</Text>
-        <Text>App</Text>
-        <Text>App</Text>
-        <Text>App</Text>
-        <Text>App</Text>
-      </View>
-    );
-  }
-}
+const App: React.FC = () => {
+  return (
+    <NavigationContainer>
+      <RootNavigator />
+    </NavigationContainer>
+  );
+};
 
 export default App;
