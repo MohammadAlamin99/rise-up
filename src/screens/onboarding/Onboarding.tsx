@@ -9,12 +9,14 @@ import React, { useRef, useState } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styles from './styles';
 import PrimaryButton from '../../components/PrimaryButton';
+import { useNavigation } from '@react-navigation/native';
 
 const { width, height } = Dimensions.get('window');
 
 const Tips = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const flatListRef = useRef<FlatList>(null);
+  const navigation = useNavigation<any>();
   const data = [
     {
       image: require('../../../assets/images/onboarding1.jpg'),
@@ -52,6 +54,8 @@ const Tips = () => {
         index: activeIndex + 1,
         animated: true,
       });
+    } else {
+      navigation.navigate('signup');
     }
   };
 
