@@ -2,13 +2,13 @@ import {
   View,
   ImageBackground,
   Text,
-  TouchableOpacity,
   FlatList,
   Dimensions,
 } from 'react-native';
 import React, { useRef, useState } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styles from './styles';
+import PrimaryButton from '../../components/PrimaryButton';
 
 const { width, height } = Dimensions.get('window');
 
@@ -87,9 +87,12 @@ const Tips = () => {
                   />
                 ))}
               </View>
-              <TouchableOpacity style={styles.button} onPress={handleNext}>
-                <Text style={styles.buttonText}>Next</Text>
-              </TouchableOpacity>
+              <PrimaryButton
+                handleNext={handleNext}
+                text="Next"
+                button={styles.button}
+                textButton={styles.buttonText}
+              />
             </SafeAreaView>
           </ImageBackground>
         )}

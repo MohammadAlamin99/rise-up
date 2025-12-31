@@ -1,7 +1,7 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SplashScreen from '../screens/splashScreen/SplashScreen';
-import Tips from '../screens/tipsScreen/Tips';
+import Tips from '../screens/onboarding/Onboarding';
 
 export type RootStackParamList = {
   Splash: undefined;

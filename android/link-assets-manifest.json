@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/LufgaExtraBold.ttf",
+      "sha1": "43a13255b8ef594cb47a2e0804faaaefbe7b876c"
+    },
+    {
+      "path": "assets/fonts/LufgaRegular.ttf",
+      "sha1": "e800469ea070f9647688d0a8c2c87edc119666c7"
+    }
+  ]
+}
