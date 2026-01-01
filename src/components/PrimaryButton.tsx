@@ -14,7 +14,7 @@ const PrimaryButton = ({
   button,
   textButton,
 }: {
-  handleNext: () => void;
+  handleNext?: () => void;
   text: string;
   button: StyleProp<ViewStyle>;
   textButton: StyleProp<TextStyle>;

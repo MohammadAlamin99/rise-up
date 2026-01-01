@@ -93,6 +93,35 @@ const styles = StyleSheet.create({
     backgroundColor:'#CCFA4C',
     borderWidth:1,
     borderColor:'#CCFA4C',
+  },
+  button: {
+    paddingVertical: 18,
+    alignItems: 'center',
+    marginTop: 44,
+    borderRadius: 100,
+    backgroundColor: '#CCFA4C',
+  },
+  buttonText: {
+    color: '#161515',
+    fontSize: 18,
+    fontFamily: 'LufgaMedium',
+    fontWeight: 500,
+  },
+  orText:{
+    color:'white',
+    fontSize:17,
+    fontFamily:'LufgaRegular',
+    fontWeight:400,
+    marginTop:20,
+    textAlign:'center',
+  },
+  socialContainer:{
+    display:'flex',
+    flexDirection:'row',
+    marginTop:28,
+    gap:30,
+    alignItems:'center',
+    justifyContent:'center',
   }
 });
 

@@ -13,7 +13,7 @@ import { useNavigation } from '@react-navigation/native';
 
 const { width, height } = Dimensions.get('window');
 
-const Tips = () => {
+const Onboarding = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const flatListRef = useRef<FlatList>(null);
   const navigation = useNavigation<any>();
@@ -105,4 +105,4 @@ const Tips = () => {
   );
 };
 
-export default Tips;
+export default Onboarding;

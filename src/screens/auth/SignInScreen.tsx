@@ -3,9 +3,14 @@ import React, { useState } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styles from './signinStyle';
 import PrimaryButton from '../../components/PrimaryButton';
+import { useNavigation } from '@react-navigation/native';
 
-const SignupScreen = () => {
+const SignInScreen = () => {
   const [remember, setRemember] = useState(false);
+  const navigation = useNavigation<any>();
+  const handleNext = () => {
+    navigation.navigate('Home');
+  };
   return (
     <SafeAreaView style={styles.mainContainer}>
       {/* top header */}
@@ -59,14 +64,30 @@ const SignupScreen = () => {
           <Text style={styles.forgetText}>Forgot password</Text>
         </TouchableOpacity>
       </View>
-      {/* <PrimaryButton
+      {/* primary button */}
+      <PrimaryButton
         handleNext={handleNext}
         text="Sign in"
         button={styles.button}
         textButton={styles.buttonText}
-      /> */}
+      />
+      <View>
+        <Text style={styles.orText}>or, sign in with</Text>
+        </View>
+        {/* social media */}
+        <View style={styles.socialContainer}>
+          <TouchableOpacity>
+            <Text>Google</Text>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Text>Facebook</Text>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Text>Apple</Text>
+          </TouchableOpacity>
+        </View>
     </SafeAreaView>
   );
 };
 
-export default SignupScreen;
+export default SignInScreen;
