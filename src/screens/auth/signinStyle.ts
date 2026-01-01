@@ -122,6 +122,35 @@ const styles = StyleSheet.create({
     gap:30,
     alignItems:'center',
     justifyContent:'center',
+    marginBottom:100,
+  },
+  SocialIconbox:{
+    width:44,
+    height:44,
+    borderRadius:100,
+    backgroundColor:'#222121',
+    alignItems:'center',
+    justifyContent:'center',
+  },
+  footer:{
+    display:'flex',
+    flexDirection:'row',
+    alignItems:'center',
+    justifyContent:'center',
+    marginTop:24,
+    gap:7,
+  },
+  footerText:{
+    color:'white',
+    fontSize:18,
+    fontFamily:'LufgaRegular',
+    fontWeight:400,
+  },
+  footerSign:{
+    color:'#CCFA4C',
+    fontSize:18,
+    fontFamily:'LufgaRegular',
+    fontWeight:400,
   }
 });
 

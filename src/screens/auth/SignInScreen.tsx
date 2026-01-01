@@ -4,6 +4,9 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import styles from './signinStyle';
 import PrimaryButton from '../../components/PrimaryButton';
 import { useNavigation } from '@react-navigation/native';
+import Apple from '../../components/svg/Apple';
+import GoogleIcon from '../../components/svg/GoogleIcon';
+import FacebookIcon from '../../components/svg/FacebookIcon';
 
 const SignInScreen = () => {
   const [remember, setRemember] = useState(false);
@@ -76,14 +79,26 @@ const SignInScreen = () => {
         </View>
         {/* social media */}
         <View style={styles.socialContainer}>
-          <TouchableOpacity>
-            <Text>Google</Text>
+         <View style={styles.SocialIconbox}>
+           <TouchableOpacity>
+            <Apple color="white"/>
           </TouchableOpacity>
-          <TouchableOpacity>
-            <Text>Facebook</Text>
+         </View>
+         <View style={styles.SocialIconbox}>
+           <TouchableOpacity>
+            <GoogleIcon/>
           </TouchableOpacity>
+         </View>
+         <View style={styles.SocialIconbox}>
+           <TouchableOpacity>
+            <FacebookIcon/>
+          </TouchableOpacity>
+         </View>
+        </View>
+        <View style={styles.footer}>
+          <Text style={styles.footerText}>Don't have an account?</Text>
           <TouchableOpacity>
-            <Text>Apple</Text>
+            <Text style={styles.footerSign}>Sign up</Text>
           </TouchableOpacity>
         </View>
     </SafeAreaView>

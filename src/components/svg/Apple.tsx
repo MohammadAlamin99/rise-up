@@ -1,12 +1,21 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React from 'react';
+import Svg, { Path } from 'react-native-svg';
 
-const Apple = () => {
+const Apple = ({ width = 26, height = 26, color = 'white', ...props }) => {
   return (
-    <View>
-      <Text>Apple</Text>
-    </View>
-  )
-}
+    <Svg
+      width={width}
+      height={height}
+      viewBox="0 0 26 26"
+      fill="none"
+      {...props}
+    >
+      <Path
+        d="M18.4708 21.97C17.4092 22.9992 16.25 22.8367 15.1342 22.3492C13.9533 21.8508 12.87 21.8292 11.6242 22.3492C10.0642 23.0208 9.24084 22.8258 8.30917 21.97C3.0225 16.5208 3.80251 8.2225 9.80417 7.91917C11.2667 7.995 12.285 8.72083 13.1408 8.78583C14.4192 8.52583 15.6433 7.77833 17.0083 7.87583C18.6442 8.00583 19.8792 8.65583 20.6917 9.82583C17.3117 11.8517 18.1133 16.3042 21.2117 17.55C20.5942 19.175 19.7925 20.7892 18.46 21.9808L18.4708 21.97ZM13.0325 7.85417C12.87 5.43833 14.8308 3.445 17.0842 3.25C17.3983 6.045 14.5492 8.125 13.0325 7.85417Z"
+        fill={color}
+      />
+    </Svg>
+  );
+};
 
-export default Apple
+export default Apple;
