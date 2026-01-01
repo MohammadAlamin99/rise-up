@@ -31,8 +31,10 @@ const styles = StyleSheet.create({
     gap: 22,
     justifyContent: 'center',
   },
-  signText: {
+  activeText:{
     color: '#CCFA4C',
+  },
+  signText: {
     fontSize: 22,
     fontFamily: 'LufgaRegular',
     fontWeight: 400,

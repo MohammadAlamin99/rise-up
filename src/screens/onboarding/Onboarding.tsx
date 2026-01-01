@@ -55,7 +55,7 @@ const Onboarding = () => {
         animated: true,
       });
     } else {
-      navigation.navigate('signup');
+      navigation.navigate('Signin');
     }
   };
 

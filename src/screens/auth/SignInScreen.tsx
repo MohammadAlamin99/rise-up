@@ -7,6 +7,7 @@ import { useNavigation } from '@react-navigation/native';
 import Apple from '../../components/svg/Apple';
 import GoogleIcon from '../../components/svg/GoogleIcon';
 import FacebookIcon from '../../components/svg/FacebookIcon';
+import AuthHeader from '../../components/AuthHeader';
 
 const SignInScreen = () => {
   const [remember, setRemember] = useState(false);
@@ -25,15 +26,7 @@ const SignInScreen = () => {
         <Text></Text>
       </View>
       {/* sign in and sign up */}
-      <View style={styles.signContainer}>
-        <TouchableOpacity>
-          <Text style={styles.signText}>Sign in</Text>
-        </TouchableOpacity>
-        <View style={styles.line}></View>
-        <TouchableOpacity>
-          <Text style={styles.signup}>Sign up</Text>
-        </TouchableOpacity>
-      </View>
+     <AuthHeader active="signin"/>
       {/* form */}
       <View>
         <TextInput
@@ -97,7 +90,7 @@ const SignInScreen = () => {
         </View>
         <View style={styles.footer}>
           <Text style={styles.footerText}>Don't have an account?</Text>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
             <Text style={styles.footerSign}>Sign up</Text>
           </TouchableOpacity>
         </View>
