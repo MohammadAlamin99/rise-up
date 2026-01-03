@@ -51,7 +51,8 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>LufgaExtraBold.ttf</string>
+		<string>LufgaBold.ttf</string>
+		<string>LufgaMedium.ttf</string>
 		<string>LufgaRegular.ttf</string>
 	</array>
 </dict>

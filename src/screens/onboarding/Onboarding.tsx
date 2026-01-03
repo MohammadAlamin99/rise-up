@@ -79,7 +79,6 @@ const Onboarding = () => {
             <SafeAreaView style={styles.container}>
               <Text style={styles.title}>{item.title}</Text>
               <Text style={styles.description}>{item.description}</Text>
-
               <View style={styles.pagination}>
                 {data.map((_, index) => (
                   <View

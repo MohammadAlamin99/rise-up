@@ -15,14 +15,14 @@ const styles = StyleSheet.create({
   skipText: {
     color: 'white',
     fontSize: 16,
-    fontFamily: 'LufgaMedium',
+    fontFamily: 'LufgaRegular',
     fontWeight: 500,
   },
   titleText: {
     color: 'white',
     fontSize: 38,
-    fontFamily: 'LufgaBold',
-    fontWeight: 700,
+    fontFamily: 'LufgaMedium',
+    fontWeight: 500,
   },
   signContainer: {
     flexDirection: 'row',
@@ -77,14 +77,14 @@ const styles = StyleSheet.create({
   },
   rememberText:{
     color:'white',
-    fontSize:16,
+    fontSize:14,
     fontFamily:'LufgaRegular',
     fontWeight:400,
     marginRight:7,
   },
   forgetText:{
     color:'white',
-    fontSize:16,
+    fontSize:14,
     fontFamily:'LufgaRegular',
     fontWeight:400,
   },
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
   button: {
     paddingVertical: 18,
     alignItems: 'center',
-    marginTop: 44,
+    marginTop: 13,
     borderRadius: 100,
     backgroundColor: '#CCFA4C',
   },
@@ -124,7 +124,6 @@ const styles = StyleSheet.create({
     gap:30,
     alignItems:'center',
     justifyContent:'center',
-    marginBottom:100,
   },
   SocialIconbox:{
     width:44,
@@ -139,18 +138,18 @@ const styles = StyleSheet.create({
     flexDirection:'row',
     alignItems:'center',
     justifyContent:'center',
-    marginTop:24,
+    marginTop:48,
     gap:7,
   },
   footerText:{
     color:'white',
-    fontSize:18,
+    fontSize:16,
     fontFamily:'LufgaRegular',
     fontWeight:400,
   },
   footerSign:{
     color:'#CCFA4C',
-    fontSize:18,
+    fontSize:16,
     fontFamily:'LufgaRegular',
     fontWeight:400,
   }

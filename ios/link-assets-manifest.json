@@ -2,8 +2,12 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "assets/fonts/LufgaExtraBold.ttf",
-      "sha1": "43a13255b8ef594cb47a2e0804faaaefbe7b876c"
+      "path": "assets/fonts/LufgaBold.ttf",
+      "sha1": "a82d5592d14fd116c6e9d5f51dc66740e735c727"
+    },
+    {
+      "path": "assets/fonts/LufgaMedium.ttf",
+      "sha1": "b0bcb8b4847b97b53456e51657592a90ce0fe24c"
     },
     {
       "path": "assets/fonts/LufgaRegular.ttf",
