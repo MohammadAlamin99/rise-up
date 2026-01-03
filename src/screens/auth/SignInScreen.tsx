@@ -8,6 +8,7 @@ import Apple from '../../components/svg/Apple';
 import GoogleIcon from '../../components/svg/GoogleIcon';
 import FacebookIcon from '../../components/svg/FacebookIcon';
 import AuthHeader from '../../components/AuthHeader';
+import AppBar from '../../components/AppBar';
 
 const SignInScreen = () => {
   const [remember, setRemember] = useState(false);
@@ -18,13 +19,7 @@ const SignInScreen = () => {
   return (
     <SafeAreaView style={styles.mainContainer}>
       {/* top header */}
-      <View style={styles.container}>
-        <TouchableOpacity>
-          <Text style={styles.skipText}>Skip</Text>
-        </TouchableOpacity>
-        <Text style={styles.titleText}>RiseUp</Text>
-        <Text></Text>
-      </View>
+      <AppBar/>
       {/* sign in and sign up */}
      <AuthHeader active="signin"/>
       {/* form */}

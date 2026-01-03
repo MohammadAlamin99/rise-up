@@ -4,6 +4,7 @@ import SplashScreen from '../screens/splashScreen/SplashScreen';
 import Onboarding from '../screens/onboarding/Onboarding';
 import SignInScreen from '../screens/auth/SignInScreen';
 import Home from '../screens/Home';
+import SignUpScreen from '../screens/auth/SignUpScreen';
 
 export type RootStackParamList = {
   Splash: undefined;
@@ -21,6 +22,7 @@ const RootNavigator: React.FC = () => {
       <Stack.Screen name="Splash" component={SplashScreen} />
       <Stack.Screen name="Onboarding" component={Onboarding} />
       <Stack.Screen name="Signin" component={SignInScreen} />
+      <Stack.Screen name="Signup" component={SignUpScreen} />
       <Stack.Screen name="Home" component={Home} />
     </Stack.Navigator>
   );

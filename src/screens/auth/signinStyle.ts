@@ -6,24 +6,24 @@ const styles = StyleSheet.create({
     backgroundColor: '#161515',
     height: '100%',
   },
-  container: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: 24,
-    alignItems: 'center',
-  },
-  skipText: {
-    color: 'white',
-    fontSize: 16,
-    fontFamily: 'LufgaRegular',
-    fontWeight: 500,
-  },
-  titleText: {
-    color: 'white',
-    fontSize: 38,
-    fontFamily: 'LufgaMedium',
-    fontWeight: 500,
-  },
+  // container: {
+  //   flexDirection: 'row',
+  //   justifyContent: 'space-between',
+  //   marginTop: 24,
+  //   alignItems: 'center',
+  // },
+  // skipText: {
+  //   color: 'white',
+  //   fontSize: 16,
+  //   fontFamily: 'LufgaRegular',
+  //   fontWeight: 500,
+  // },
+  // titleText: {
+  //   color: 'white',
+  //   fontSize: 38,
+  //   fontFamily: 'LufgaMedium',
+  //   fontWeight: 500,
+  // },
   signContainer: {
     flexDirection: 'row',
     marginTop: 50,
@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontFamily: 'LufgaRegular',
     fontWeight: 400,
+    color:'white',
   },
   signup: {
     color: 'white',
@@ -140,6 +141,7 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     marginTop:48,
     gap:7,
+    marginBottom:48,
   },
   footerText:{
     color:'white',
