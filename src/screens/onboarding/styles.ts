@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     fontSize: 38,
     color: 'white',
     marginBottom: 9,
-    width: '90%',
+    maxWidth:253,
     fontFamily: 'LufgaMedium',
     fontWeight: 500,
   },

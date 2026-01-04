@@ -1,11 +1,13 @@
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
 import React from 'react'
+import { useNavigation } from '@react-navigation/native';
 
 const AppBar = () => {
+  const navigation = useNavigation<any>();
   return (
     
       <View style={styles.container}>
-        <TouchableOpacity >
+        <TouchableOpacity onPress={() => navigation.navigate('Home')}>
           <Text style={styles.skipText}>Skip</Text>
         </TouchableOpacity>
         <Text style={styles.titleText}>RiseUp</Text>

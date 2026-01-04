@@ -19,25 +19,25 @@ const Onboarding = () => {
   const navigation = useNavigation<any>();
   const data = [
     {
-      image: require('../../../assets/images/onboarding1.jpg'),
+      image: require('../../../assets/images/img__1.png'),
       title: 'Welcome to RiseUp!',
       description:
         'your personal path to strength, confidence, and a healthier lifestyle. Every great journey starts with day one. ',
     },
     {
-      image: require('../../../assets/images/onboarding2.jpg'),
+      image: require('../../../assets/images/img__2.png'),
       title: 'Progress Over Perfection',
       description:
         'It’s not about being the best, it’s about getting better every day. Small efforts lead to big changes.',
     },
     {
-      image: require('../../../assets/images/onboarding3.jpg'),
+      image: require('../../../assets/images/img__3.png'),
       title: 'Define Your Goals',
       description:
         'Choose your fitness path, follow personalized workouts, and watch your transformation unfold.',
     },
     {
-      image: require('../../../assets/images/onboarding4.jpg'),
+      image: require('../../../assets/images/img__4.png'),
       title: 'Transform Your Strength',
       description:
         'Push yourself to new limits, track progress, and celebrate every milestone.',
