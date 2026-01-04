@@ -11,7 +11,7 @@ import { useNavigation } from '@react-navigation/native'
 const SignUpScreen = () => {
   const navigate = useNavigation<any>();
   const handleNext = () => {
-    navigate.navigate('Home');
+    navigate.navigate('Notification');
   };
   return (
     <SafeAreaView style={styles.mainContainer}>
