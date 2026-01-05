@@ -6,6 +6,7 @@ import SignInScreen from '../screens/auth/SignInScreen';
 import Home from '../screens/Home';
 import SignUpScreen from '../screens/auth/SignUpScreen';
 import NotificationScreen from '../screens/notification/NotificationScreen';
+import GenderScreen from '../screens/gender/GenderScreen';
 
 export type RootStackParamList = {
   Splash: undefined;
@@ -13,6 +14,7 @@ export type RootStackParamList = {
   Signin: undefined;
   Signup: undefined;
   Notification: undefined;
+  Gender: undefined;
   Home: undefined;
 };
 
@@ -26,6 +28,7 @@ const RootNavigator: React.FC = () => {
       <Stack.Screen name="Signin" component={SignInScreen} />
       <Stack.Screen name="Signup" component={SignUpScreen} />
       <Stack.Screen name="Notification" component={NotificationScreen} />
+      <Stack.Screen name="Gender" component={GenderScreen} />
       <Stack.Screen name="Home" component={Home} />
     </Stack.Navigator>
   );

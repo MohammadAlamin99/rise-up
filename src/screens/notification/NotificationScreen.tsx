@@ -6,12 +6,15 @@ import Notification from '../../components/svg/Notification';
 import SeconderyButton from '../../components/SeconderyButton';
 import PrimaryButton from '../../components/PrimaryButton';
 import { useNavigation } from '@react-navigation/native';
+import Header from '../../components/Header';
 
 const NotificationScreen = () => {
   const navigation = useNavigation<any>();
   return (
     <SafeAreaView style={styles.mainContainer}>
-      <Text style={styles.titleText}>Notification</Text>
+      {/* header */}
+      <Header text="Notification" />
+      {/* body */}
       <View style={styles.container}>
         <Notification />
         <Text style={styles.text}>Rise Up & Stay On Track!</Text>
@@ -24,7 +27,7 @@ const NotificationScreen = () => {
       <View>
         <SeconderyButton
           text="Maybe later"
-          onPress={() => navigation.navigate('Home')}
+          onPress={() => navigation.navigate('Gender')}
         />
         <View style={styles.buttonContainer}>
           <PrimaryButton
