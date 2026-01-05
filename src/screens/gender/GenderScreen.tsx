@@ -25,7 +25,7 @@ const GenderScreen = () => {
       </View>
       <View style={styles.button_Wreapper}>
         <PrimaryButton
-          handleNext={() => navigate.navigate('Home')}
+          handleNext={() => navigate.navigate('BodyParameter')}
           text="Continue"
         />
       </View>
