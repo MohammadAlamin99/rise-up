@@ -1,35 +1,41 @@
-import { Text, View } from 'react-native'
-import React from 'react'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { styles } from './style'
-import Notification from '../../components/svg/Notification'
-import SeconderyButton from '../../components/SeconderyButton'
-import PrimaryButton from '../../components/PrimaryButton'
-
+import { Text, View } from 'react-native';
+import React from 'react';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { styles } from './style';
+import Notification from '../../components/svg/Notification';
+import SeconderyButton from '../../components/SeconderyButton';
+import PrimaryButton from '../../components/PrimaryButton';
+import { useNavigation } from '@react-navigation/native';
 
 const NotificationScreen = () => {
+  const navigation = useNavigation<any>();
   return (
     <SafeAreaView style={styles.mainContainer}>
       <Text style={styles.titleText}>Notification</Text>
       <View style={styles.container}>
-        <Notification/>
+        <Notification />
         <Text style={styles.text}>Rise Up & Stay On Track!</Text>
-        <Text style={styles.text2}>Turn on notifications to get workout alerts, daily motivation, and progress milestones.</Text>
+        <Text style={styles.text2}>
+          Turn on notifications to get workout alerts, daily motivation, and
+          progress milestones.
+        </Text>
       </View>
       {/* button */}
       <View>
-        <SeconderyButton/>
+        <SeconderyButton
+          text="Maybe later"
+          onPress={() => navigation.navigate('Home')}
+        />
         <View style={styles.buttonContainer}>
-            <PrimaryButton
-                handleNext={() => {}}
-                text="Grant Access"
-                button={styles.button}
-                textButton={styles.buttonText}
-            />
+          <PrimaryButton
+            handleNext={() => {}}
+            text="Grant Access"
+            variant="primary"
+          />
         </View>
       </View>
     </SafeAreaView>
-  )
-}
+  );
+};
 
-export default NotificationScreen
+export default NotificationScreen;

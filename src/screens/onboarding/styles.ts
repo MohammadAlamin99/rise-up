@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     fontSize: 38,
     color: 'white',
     marginBottom: 9,
-    maxWidth:253,
+    maxWidth: 253,
     fontFamily: 'LufgaMedium',
     fontWeight: 500,
   },
@@ -25,19 +25,19 @@ const styles = StyleSheet.create({
     fontFamily: 'LufgaRegular',
     fontWeight: '400',
   },
-  button: {
-    paddingVertical: 18,
-    alignItems: 'center',
-    marginTop: 44,
-    borderRadius: 100,
-    backgroundColor: '#CCFA4C',
-  },
-  buttonText: {
-    color: '#161515',
-    fontSize: 18,
-    fontFamily: 'LufgaMedium',
-    fontWeight: 500,
-  },
+  // button: {
+  //   paddingVertical: 18,
+  //   alignItems: 'center',
+  //   marginTop: 44,
+  //   borderRadius: 100,
+  //   backgroundColor: '#CCFA4C',
+  // },
+  // buttonText: {
+  //   color: '#161515',
+  //   fontSize: 18,
+  //   fontFamily: 'LufgaMedium',
+  //   fontWeight: 500,
+  // },
 
   pagination: {
     marginTop: 48,

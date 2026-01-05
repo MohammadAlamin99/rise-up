@@ -93,8 +93,7 @@ const Onboarding = () => {
               <PrimaryButton
                 handleNext={handleNext}
                 text="Next"
-                button={styles.button}
-                textButton={styles.buttonText}
+                variant="primary"
               />
             </SafeAreaView>
           </ImageBackground>

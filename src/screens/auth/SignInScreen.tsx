@@ -14,14 +14,14 @@ const SignInScreen = () => {
   const [remember, setRemember] = useState(false);
   const navigation = useNavigation<any>();
   const handleNext = () => {
-    navigation.navigate('Home');
+    navigation.navigate('Notification');
   };
   return (
     <SafeAreaView style={styles.mainContainer}>
       {/* top header */}
-      <AppBar/>
+      <AppBar />
       {/* sign in and sign up */}
-     <AuthHeader active="signin"/>
+      <AuthHeader active="signin" />
       {/* form */}
       <View>
         <TextInput
@@ -59,36 +59,35 @@ const SignInScreen = () => {
       <PrimaryButton
         handleNext={handleNext}
         text="Sign in"
-        button={styles.button}
-        textButton={styles.buttonText}
+        variant="primary"
       />
       <View>
         <Text style={styles.orText}>or, sign in with</Text>
-        </View>
-        {/* social media */}
-        <View style={styles.socialContainer}>
-         <View style={styles.SocialIconbox}>
-           <TouchableOpacity>
-            <Apple color="white"/>
-          </TouchableOpacity>
-         </View>
-         <View style={styles.SocialIconbox}>
-           <TouchableOpacity>
-            <GoogleIcon/>
-          </TouchableOpacity>
-         </View>
-         <View style={styles.SocialIconbox}>
-           <TouchableOpacity>
-            <FacebookIcon/>
-          </TouchableOpacity>
-         </View>
-        </View>
-        <View style={styles.footer}>
-          <Text style={styles.footerText}>Don't have an account?</Text>
-          <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
-            <Text style={styles.footerSign}>Sign up</Text>
+      </View>
+      {/* social media */}
+      <View style={styles.socialContainer}>
+        <View style={styles.SocialIconbox}>
+          <TouchableOpacity>
+            <Apple color="white" />
           </TouchableOpacity>
         </View>
+        <View style={styles.SocialIconbox}>
+          <TouchableOpacity>
+            <GoogleIcon />
+          </TouchableOpacity>
+        </View>
+        <View style={styles.SocialIconbox}>
+          <TouchableOpacity>
+            <FacebookIcon />
+          </TouchableOpacity>
+        </View>
+      </View>
+      <View style={styles.footer}>
+        <Text style={styles.footerText}>Don't have an account?</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
+          <Text style={styles.footerSign}>Sign up</Text>
+        </TouchableOpacity>
+      </View>
     </SafeAreaView>
   );
 };
