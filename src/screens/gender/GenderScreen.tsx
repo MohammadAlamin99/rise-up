@@ -6,6 +6,7 @@ import MaleIcon from '../../components/svg/MaleIcon';
 import { View, Text } from 'react-native';
 import PrimaryButton from '../../components/PrimaryButton';
 import { useNavigation } from '@react-navigation/native';
+import FemaleIcon from '../../components/svg/FemaleIcon';
 
 const GenderScreen = () => {
   const navigate = useNavigation<any>();
@@ -18,7 +19,7 @@ const GenderScreen = () => {
           <Text style={styles.text}>Male</Text>
         </View>
         <View style={styles.icon_wrapper2}>
-          <MaleIcon width={70} height={70} color="#161515" />
+          <FemaleIcon width={70} height={70} color="#161515" />
           <Text style={styles.text}>Female</Text>
         </View>
       </View>
