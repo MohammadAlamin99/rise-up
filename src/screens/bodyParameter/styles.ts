@@ -6,7 +6,6 @@ const OVERLAY_COLOR = 'rgba(0, 0, 0, 0.7)';
 const ITEM_HEIGHT = 45;
 
 const styles = StyleSheet.create({
-
   container: {
     flex: 1,
     backgroundColor: '#121212',
