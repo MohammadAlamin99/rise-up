@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 
-const LIME_GREEN = '#D7FF51';
+const LIME_GREEN = '#CCFA4C';
 const OVERLAY_COLOR = 'rgba(0, 0, 0, 0.7)';
 const ITEM_HEIGHT = 45;
 
@@ -27,14 +27,14 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
     paddingHorizontal: 16,
+    gap: 10,
   },
   card: {
-    height: 160,
+    height: 230,
     borderRadius: 20,
     overflow: 'hidden',
-    marginBottom: 15,
     borderWidth: 1,
-    borderColor: '#222',
+    borderColor: 'rgba(204, 250, 76, 0.49)',
   },
   overlay: {
     flex: 1,
@@ -45,9 +45,11 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     color: '#FFF',
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginBottom: 5,
+    fontSize: 17,
+    fontFamily: "LufgaMedium",
+    fontWeight:500,
+    marginBottom: 10,
+    paddingTop:10,
   },
   row: {
     flexDirection: 'row',
@@ -59,6 +61,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255,255,255,0.08)',
     borderRadius: 12,
     marginHorizontal: 4,
+    overflow: 'hidden',
   },
   pickerItem: {
     height: ITEM_HEIGHT,
@@ -67,13 +70,15 @@ const styles = StyleSheet.create({
   },
   pickerText: {
     color: '#888',
-    fontSize: 20,
-    fontWeight: '600',
+    fontSize: 22,
+    fontWeight: '500',
+    fontFamily: "LufgaMedium",
   },
   pickerTextSelected: {
     color: LIME_GREEN,
-    fontSize: 24,
-    fontWeight: 'bold',
+    fontSize: 22,
+    fontWeight: '500',
+    fontFamily: "LufgaMedium",
   },
   unitLabel: {
     color: '#AAA',
@@ -108,7 +113,8 @@ const styles = StyleSheet.create({
   prevBtnText: {
     color: LIME_GREEN,
     fontSize: 18,
-    fontWeight: '700',
+    fontWeight: '500',
+    fontFamily: "LufgaMedium",
   },
   continueBtn: {
     flex: 1,
@@ -121,7 +127,8 @@ const styles = StyleSheet.create({
   continueBtnText: {
     color: '#000',
     fontSize: 18,
-    fontWeight: '700',
+    fontWeight: '500',
+    fontFamily: "LufgaMedium",
   },
 });
 

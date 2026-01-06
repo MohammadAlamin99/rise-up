@@ -20,7 +20,6 @@ const CustomPicker = <T extends number | string>({
     const yOffset = event.nativeEvent.contentOffset.y;
     const index = Math.round(yOffset / ITEM_HEIGHT);
     const value = data[index];
-
     if (value !== undefined && value !== selectedValue) {
       onValueChange(value);
     }
@@ -45,6 +44,7 @@ const CustomPicker = <T extends number | string>({
               {item}
             </Text>
           </View>
+          
         )}
       />
     </View>

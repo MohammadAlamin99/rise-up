@@ -4,6 +4,7 @@ import {
   Text,
   TouchableOpacity,
   ImageBackground,
+  ScrollView,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styles from './styles';
@@ -27,14 +28,14 @@ const BodyParameterScreen: React.FC = () => {
   return (
     <SafeAreaView style={styles.container}>
       {/* Header */}
-      <View style={styles.MainHeader}>
+       <View style={styles.MainHeader}>
          <Header text="Body parameters" />
        </View>
       <View style={styles.dividerWrapper}>
         <View style={styles.divider} />
       </View>
-
-
+      <ScrollView
+      >
       <View style={styles.content}>
         {/* Age Section */}
         <ImageBackground
@@ -50,7 +51,7 @@ const BodyParameterScreen: React.FC = () => {
               selectedValue={age}
               onValueChange={setAge}
             />
-            <Text style={styles.unitLabel}>years</Text>
+            <Text style={styles.cardTitle}>Years</Text>
           </View>
         </ImageBackground>
 
@@ -75,7 +76,7 @@ const BodyParameterScreen: React.FC = () => {
                 onValueChange={setWeightDec}
               />
             </View>
-            <Text style={styles.unitLabel}>kg</Text>
+             <Text style={styles.cardTitle}>kg</Text>
           </View>
         </ImageBackground>
 
@@ -102,13 +103,15 @@ const BodyParameterScreen: React.FC = () => {
               </View>
             </View>
             <View style={styles.heightUnitsRow}>
-              <Text style={styles.unitLabel}>cm</Text>
-              <Text style={styles.unitLabel}>feet</Text>
+               <Text style={styles.cardTitle}>cm</Text>
+               <Text style={styles.cardTitle}>feet</Text>
             </View>
           </View>
         </ImageBackground>
       </View>
 
+      </ScrollView>
+      
       {/* Footer Actions */}
       <View style={styles.footer}>
         <TouchableOpacity style={styles.prevBtn} activeOpacity={0.7}
