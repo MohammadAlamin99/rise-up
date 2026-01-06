@@ -44,7 +44,6 @@ const CustomPicker = <T extends number | string>({
               {item}
             </Text>
           </View>
-          
         )}
       />
     </View>

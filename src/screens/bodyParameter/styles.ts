@@ -1,6 +1,5 @@
 import { StyleSheet } from 'react-native';
 
-
 const LIME_GREEN = '#CCFA4C';
 const OVERLAY_COLOR = 'rgba(0, 0, 0, 0.7)';
 const ITEM_HEIGHT = 45;
@@ -11,18 +10,18 @@ const styles = StyleSheet.create({
     backgroundColor: '#121212',
   },
   MainHeader: {
-    marginBottom:13,
+    marginBottom: 13,
   },
   dividerWrapper: {
     paddingBottom: 13,
-    paddingInline:16,
+    paddingInline: 16,
   },
 
   divider: {
     height: 1,
-    width:'100%',
+    width: '100%',
     backgroundColor: '#fff',
-    opacity:0.3,
+    opacity: 0.3,
   },
   content: {
     flex: 1,
@@ -46,10 +45,10 @@ const styles = StyleSheet.create({
   cardTitle: {
     color: '#FFF',
     fontSize: 17,
-    fontFamily: "LufgaMedium",
-    fontWeight:500,
+    fontFamily: 'LufgaMedium',
+    fontWeight: 500,
     marginBottom: 10,
-    paddingTop:10,
+    paddingTop: 10,
   },
   row: {
     flexDirection: 'row',
@@ -72,34 +71,34 @@ const styles = StyleSheet.create({
     color: '#888',
     fontSize: 22,
     fontWeight: '500',
-    fontFamily: "LufgaMedium",
+    fontFamily: 'LufgaMedium',
   },
   pickerTextSelected: {
     color: LIME_GREEN,
     fontSize: 22,
     fontWeight: '500',
-    fontFamily: "LufgaMedium",
+    fontFamily: 'LufgaMedium',
   },
   orText: {
     color: '#FFF',
     fontSize: 16,
     marginHorizontal: 8,
-    fontFamily: "LufgaMedium",
-    fontWeight:500,
+    fontFamily: 'LufgaMedium',
+    fontWeight: 500,
   },
   unitText: {
-  color: '#fff',
-  marginHorizontal: 6,
-  fontSize: 16,
-  alignSelf: 'center',
-},
+    color: '#fff',
+    marginHorizontal: 6,
+    fontSize: 16,
+    alignSelf: 'center',
+  },
 
-heightDisplay: {
-  marginTop: 12,
-  color: '#fff',
-  fontSize: 18,
-  fontWeight: '600',
-},
+  heightDisplay: {
+    marginTop: 12,
+    color: '#fff',
+    fontSize: 18,
+    fontWeight: '600',
+  },
 
   heightUnitsRow: {
     flexDirection: 'row',
@@ -124,7 +123,7 @@ heightDisplay: {
     color: LIME_GREEN,
     fontSize: 18,
     fontWeight: '500',
-    fontFamily: "LufgaMedium",
+    fontFamily: 'LufgaMedium',
   },
   continueBtn: {
     flex: 1,
@@ -138,7 +137,7 @@ heightDisplay: {
     color: '#000',
     fontSize: 18,
     fontWeight: '500',
-    fontFamily: "LufgaMedium",
+    fontFamily: 'LufgaMedium',
   },
 });
 

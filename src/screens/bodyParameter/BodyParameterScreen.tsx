@@ -18,7 +18,7 @@ const BodyParameterScreen: React.FC = () => {
   const [weightDec, setWeightDec] = useState<number>(0);
   const [heightCm, setHeightCm] = useState<number>(165);
   const [heightFeet, setHeightFeet] = useState<number>(5);
-  const navigate = useNavigation<any>()
+  const navigate = useNavigation<any>();
 
   // Generate Data Ranges
   const ages: number[] = Array.from({ length: 80 }, (_, i) => i + 10);
@@ -30,98 +30,101 @@ const BodyParameterScreen: React.FC = () => {
   return (
     <SafeAreaView style={styles.container}>
       {/* Header */}
-       <View style={styles.MainHeader}>
-         <Header text="Body parameters" />
-       </View>
+      <View style={styles.MainHeader}>
+        <Header text="Body parameters" />
+      </View>
       <View style={styles.dividerWrapper}>
         <View style={styles.divider} />
       </View>
       <ScrollView>
-      <View style={styles.content}>
-        {/* Age Section */}
-        <ImageBackground
-          style={styles.card}
-          source={{
-            uri: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=400',
-          }}
-        >
-          <View style={styles.overlay}>
-            <Text style={styles.cardTitle}>Your Age</Text>
-            <CustomPicker
-              data={ages}
-              selectedValue={age}
-              onValueChange={setAge}
-            />
-            <Text style={styles.cardTitle}>Years</Text>
-          </View>
-        </ImageBackground>
-
-        {/* Weight Section */}
-        <ImageBackground
-          style={styles.card}
-          source={{
-            uri: 'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400',
-          }}
-        >
-          <View style={styles.overlay}>
-            <Text style={styles.cardTitle}>Your Weight</Text>
-            <View style={styles.row}>
+        <View style={styles.content}>
+          {/* Age Section */}
+          <ImageBackground
+            style={styles.card}
+            source={{
+              uri: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=400',
+            }}
+          >
+            <View style={styles.overlay}>
+              <Text style={styles.cardTitle}>Your Age</Text>
               <CustomPicker
-                data={weights}
-                selectedValue={weightInt}
-                onValueChange={setWeightInt}
+                data={ages}
+                selectedValue={age}
+                onValueChange={setAge}
               />
-              <CustomPicker
-                data={decimals}
-                selectedValue={weightDec}
-                onValueChange={setWeightDec}
-              />
+              <Text style={styles.cardTitle}>Years</Text>
             </View>
-             <Text style={styles.cardTitle}>kg</Text>
-          </View>
-        </ImageBackground>
+          </ImageBackground>
 
-        {/* Height Section */}
-        <ImageBackground
-          style={styles.card}
-          source={{
-            uri: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400',
-          }}
-        >
-          <View style={styles.overlay}>
-            <Text style={styles.cardTitle}>Your Height</Text>
-            <View style={styles.row}>
-              <CustomPicker
-                data={heights}
-                selectedValue={heightCm}
-                onValueChange={setHeightCm}
-              />
-              <Text style={styles.orText}>or,</Text>
-               <CustomPicker
-                data={heightfeet}
-                selectedValue={heightFeet}
-                onValueChange={setHeightFeet}
-              />
+          {/* Weight Section */}
+          <ImageBackground
+            style={styles.card}
+            source={{
+              uri: 'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400',
+            }}
+          >
+            <View style={styles.overlay}>
+              <Text style={styles.cardTitle}>Your Weight</Text>
+              <View style={styles.row}>
+                <CustomPicker
+                  data={weights}
+                  selectedValue={weightInt}
+                  onValueChange={setWeightInt}
+                />
+                <CustomPicker
+                  data={decimals}
+                  selectedValue={weightDec}
+                  onValueChange={setWeightDec}
+                />
+              </View>
+              <Text style={styles.cardTitle}>kg</Text>
             </View>
-            <View style={styles.heightUnitsRow}>
-               <Text style={styles.cardTitle}>cm</Text>
-               <Text style={styles.cardTitle}>feet</Text>
-            </View>
-          </View>
-        </ImageBackground>
-      </View>
+          </ImageBackground>
 
+          {/* Height Section */}
+          <ImageBackground
+            style={styles.card}
+            source={{
+              uri: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400',
+            }}
+          >
+            <View style={styles.overlay}>
+              <Text style={styles.cardTitle}>Your Height</Text>
+              <View style={styles.row}>
+                <CustomPicker
+                  data={heights}
+                  selectedValue={heightCm}
+                  onValueChange={setHeightCm}
+                />
+                <Text style={styles.orText}>or,</Text>
+                <CustomPicker
+                  data={heightfeet}
+                  selectedValue={heightFeet}
+                  onValueChange={setHeightFeet}
+                />
+              </View>
+              <View style={styles.heightUnitsRow}>
+                <Text style={styles.cardTitle}>cm</Text>
+                <Text style={styles.cardTitle}>feet</Text>
+              </View>
+            </View>
+          </ImageBackground>
+        </View>
       </ScrollView>
-      
+
       {/* Footer Actions */}
       <View style={styles.footer}>
-        <TouchableOpacity style={styles.prevBtn} activeOpacity={0.7}
-        onPress={()=>navigate.navigate('Gender')}
+        <TouchableOpacity
+          style={styles.prevBtn}
+          activeOpacity={0.7}
+          onPress={() => navigate.navigate('Gender')}
         >
           <Text style={styles.prevBtnText}>Previous</Text>
-        </TouchableOpacity> 
-        <TouchableOpacity style={styles.continueBtn} activeOpacity={0.7}
-        onPress={()=>navigate.navigate('Goal')}
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.continueBtn}
+          activeOpacity={0.7}
+          onPress={() => navigate.navigate('Goal')}
         >
           <Text style={styles.continueBtnText}>Continue</Text>
         </TouchableOpacity>
