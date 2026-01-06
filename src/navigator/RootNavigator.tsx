@@ -8,6 +8,7 @@ import SignUpScreen from '../screens/auth/SignUpScreen';
 import NotificationScreen from '../screens/notification/NotificationScreen';
 import GenderScreen from '../screens/gender/GenderScreen';
 import BodyParameterScreen from '../screens/bodyParameter/BodyParameterScreen';
+import GoalScreen from '../screens/goal/GoalScreen';
 
 export type RootStackParamList = {
   Splash: undefined;
@@ -17,6 +18,7 @@ export type RootStackParamList = {
   Notification: undefined;
   Gender: undefined;
   BodyParameter: undefined;
+  Goal: undefined;
   Home: undefined;
 };
 
@@ -32,6 +34,7 @@ const RootNavigator: React.FC = () => {
       <Stack.Screen name="Notification" component={NotificationScreen} />
       <Stack.Screen name="Gender" component={GenderScreen} />
       <Stack.Screen name="BodyParameter" component={BodyParameterScreen} />
+      <Stack.Screen name="Goal" component={GoalScreen} />
       <Stack.Screen name="Home" component={Home} />
     </Stack.Navigator>
   );

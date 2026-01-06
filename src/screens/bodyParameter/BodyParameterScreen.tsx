@@ -17,6 +17,7 @@ const BodyParameterScreen: React.FC = () => {
   const [weightInt, setWeightInt] = useState<number>(73);
   const [weightDec, setWeightDec] = useState<number>(0);
   const [heightCm, setHeightCm] = useState<number>(165);
+  const [heightFeet, setHeightFeet] = useState<number>(5);
   const navigate = useNavigation<any>()
 
   // Generate Data Ranges
@@ -24,6 +25,7 @@ const BodyParameterScreen: React.FC = () => {
   const weights: number[] = Array.from({ length: 150 }, (_, i) => i + 30);
   const decimals: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
   const heights: number[] = Array.from({ length: 100 }, (_, i) => i + 130);
+  const heightfeet: number[] = Array.from({ length: 10 }, (_, i) => i + 5);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -34,8 +36,7 @@ const BodyParameterScreen: React.FC = () => {
       <View style={styles.dividerWrapper}>
         <View style={styles.divider} />
       </View>
-      <ScrollView
-      >
+      <ScrollView>
       <View style={styles.content}>
         {/* Age Section */}
         <ImageBackground
@@ -96,11 +97,11 @@ const BodyParameterScreen: React.FC = () => {
                 onValueChange={setHeightCm}
               />
               <Text style={styles.orText}>or,</Text>
-              <View style={styles.pickerWrapper}>
-                <View style={styles.pickerItem}>
-                  <Text style={styles.pickerText}>5'5"</Text>
-                </View>
-              </View>
+               <CustomPicker
+                data={heightfeet}
+                selectedValue={heightFeet}
+                onValueChange={setHeightFeet}
+              />
             </View>
             <View style={styles.heightUnitsRow}>
                <Text style={styles.cardTitle}>cm</Text>
@@ -119,7 +120,9 @@ const BodyParameterScreen: React.FC = () => {
         >
           <Text style={styles.prevBtnText}>Previous</Text>
         </TouchableOpacity> 
-        <TouchableOpacity style={styles.continueBtn} activeOpacity={0.7}>
+        <TouchableOpacity style={styles.continueBtn} activeOpacity={0.7}
+        onPress={()=>navigate.navigate('Goal')}
+        >
           <Text style={styles.continueBtnText}>Continue</Text>
         </TouchableOpacity>
       </View>

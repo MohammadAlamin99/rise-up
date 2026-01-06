@@ -80,17 +80,27 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     fontFamily: "LufgaMedium",
   },
-  unitLabel: {
-    color: '#AAA',
-    fontSize: 14,
-    marginTop: 6,
-    fontWeight: '500',
-  },
   orText: {
     color: '#FFF',
     fontSize: 16,
     marginHorizontal: 8,
+    fontFamily: "LufgaMedium",
+    fontWeight:500,
   },
+  unitText: {
+  color: '#fff',
+  marginHorizontal: 6,
+  fontSize: 16,
+  alignSelf: 'center',
+},
+
+heightDisplay: {
+  marginTop: 12,
+  color: '#fff',
+  fontSize: 18,
+  fontWeight: '600',
+},
+
   heightUnitsRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
