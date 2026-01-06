@@ -4,17 +4,19 @@ import {
   Text,
   TouchableOpacity,
   ImageBackground,
-  StatusBar,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styles from './styles';
 import CustomPicker from '../../components/CustomPicker';
+import { useNavigation } from '@react-navigation/native';
+import Header from '../../components/Header';
 
 const BodyParameterScreen: React.FC = () => {
   const [age, setAge] = useState<number>(25);
   const [weightInt, setWeightInt] = useState<number>(73);
   const [weightDec, setWeightDec] = useState<number>(0);
   const [heightCm, setHeightCm] = useState<number>(165);
+  const navigate = useNavigation<any>()
 
   // Generate Data Ranges
   const ages: number[] = Array.from({ length: 80 }, (_, i) => i + 10);
@@ -24,13 +26,14 @@ const BodyParameterScreen: React.FC = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="light-content" />
-
       {/* Header */}
-      <View style={styles.header}>
-        <Text style={styles.headerTitle}>Body parameters</Text>
+      <View style={styles.MainHeader}>
+         <Header text="Body parameters" />
+       </View>
+      <View style={styles.dividerWrapper}>
         <View style={styles.divider} />
       </View>
+
 
       <View style={styles.content}>
         {/* Age Section */}
@@ -108,10 +111,11 @@ const BodyParameterScreen: React.FC = () => {
 
       {/* Footer Actions */}
       <View style={styles.footer}>
-        <TouchableOpacity style={styles.prevBtn} activeOpacity={0.7}>
+        <TouchableOpacity style={styles.prevBtn} activeOpacity={0.7}
+        onPress={()=>navigate.navigate('Gender')}
+        >
           <Text style={styles.prevBtnText}>Previous</Text>
-        </TouchableOpacity>
-
+        </TouchableOpacity> 
         <TouchableOpacity style={styles.continueBtn} activeOpacity={0.7}>
           <Text style={styles.continueBtnText}>Continue</Text>
         </TouchableOpacity>

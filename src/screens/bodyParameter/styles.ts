@@ -1,6 +1,6 @@
-import { Dimensions, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
-const { width } = Dimensions.get('window');
+
 const LIME_GREEN = '#D7FF51';
 const OVERLAY_COLOR = 'rgba(0, 0, 0, 0.7)';
 const ITEM_HEIGHT = 45;
@@ -10,21 +10,19 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#121212',
   },
-  header: {
-    alignItems: 'center',
-    paddingVertical: 15,
+  MainHeader: {
+    marginBottom:13,
   },
-  headerTitle: {
-    color: '#FFF',
-    fontSize: 22,
-    fontWeight: '700',
-    letterSpacing: 0.5,
-    marginBottom: 15,
+  dividerWrapper: {
+    paddingBottom: 13,
+    paddingInline:16,
   },
+
   divider: {
     height: 1,
-    width: width * 0.9,
-    backgroundColor: '#2A2A2A',
+    width:'100%',
+    backgroundColor: '#fff',
+    opacity:0.3,
   },
   content: {
     flex: 1,
