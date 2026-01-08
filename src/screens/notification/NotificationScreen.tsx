@@ -13,7 +13,7 @@ const NotificationScreen = () => {
   return (
     <SafeAreaView style={styles.mainContainer}>
       {/* header */}
-      <Header text="Notification" />
+      <Header text="Notification" border={false} />
       {/* body */}
       <View style={styles.container}>
         <Notification />

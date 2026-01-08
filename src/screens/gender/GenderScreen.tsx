@@ -12,7 +12,7 @@ const GenderScreen = () => {
   const navigate = useNavigation<any>();
   return (
     <SafeAreaView style={styles.container}>
-      <Header text="Select your gender" />
+      <Header text="Select your gender" border={false} />
       <View style={styles.iconWrapperMain}>
         <View style={styles.icon_wrapper}>
           <MaleIcon width={70} height={70} color="#161515" />
