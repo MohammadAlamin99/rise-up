@@ -25,6 +25,10 @@ export const styles = StyleSheet.create({
     fontWeight: 500,
     marginBottom: 10,
   },
+  box_Twoin_Wrapper: {
+    display: 'flex',
+    flexDirection: 'row',
+  },
   box: {
     justifyContent: 'center',
     alignItems: 'center',
@@ -43,6 +47,11 @@ export const styles = StyleSheet.create({
     fontFamily: 'LufgaMedium',
     fontWeight: 500,
     color: 'hsla(0, 0%, 100%, 0.50)',
+  },
+  number_wrapper: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   activeNumber: {
     fontSize: 22,
