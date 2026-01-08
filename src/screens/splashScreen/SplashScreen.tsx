@@ -16,7 +16,10 @@ const SplashScreen: React.FC<Props> = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require('../../../assets/images/companylogo.png')}/>
+      <Image
+        style={styles.image}
+        source={require('../../../assets/images/companylogo.png')}
+      />
     </View>
   );
 };

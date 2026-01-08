@@ -56,11 +56,7 @@ const SignInScreen = () => {
         </TouchableOpacity>
       </View>
       {/* primary button */}
-      <PrimaryButton
-        handleNext={handleNext}
-        text="Sign in"
-        variant="primary"
-      />
+      <PrimaryButton handleNext={handleNext} text="Sign in" variant="primary" />
       <View>
         <Text style={styles.orText}>or, sign in with</Text>
       </View>
